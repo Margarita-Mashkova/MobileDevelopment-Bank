@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ClientsReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/border2"
+            android:textColor="#DC54B7"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_margin="10dp"
+            android:text="Выберите период:"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextDateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:inputType="date"
+            android:background="@drawable/border2"
+            android:hint="Начало периода"
+            android:minHeight="48dp"
+            android:minWidth="350dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:inputType="date"
+            android:background="@drawable/border2"
+            android:hint="Конец периода"
+            android:minHeight="48dp"
+            android:minWidth="350dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/buttonSendMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_margin="15dp"
+            android:backgroundTint="#E8FFFFFF"
+            android:textColor="#DC54B7"
+            android:text="Отправить на почту" />
+
+    </LinearLayout>
+
+</FrameLayout>

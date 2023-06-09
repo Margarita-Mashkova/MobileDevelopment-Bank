@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Главная"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home"/>
+    <item android:title="Справочники"
+        android:icon="@drawable/ic_baseline_collections_bookmark_24"
+        android:id="@+id/manuals"/>
+    <item android:title="Отчёты"
+        android:icon="@drawable/ic_baseline_content_paste_24"
+        android:id="@+id/reports" />
+    <item android:title="Привязка"
+        android:icon="@drawable/ic_baseline_insights_24"
+        android:id="@+id/bindingClients"/>
+    <item android:title="Профиль"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profile"/>
+</menu>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background2"
+    tools:context=".fragments.AddClientFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCreateClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border3"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Создание клиента"
+                android:textAlignment="center"
+                android:textColor="#DC54B7"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border3"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="ФИО клиента"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editTextClientFIO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border2"
+                        android:fontFamily="sans-serif"
+                        android:hint="ФИО клиента"
+                        android:inputType="textCapWords"
+                        android:minHeight="48dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border3"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Паспортные данные"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editTextPassport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border2"
+                        android:fontFamily="sans-serif"
+                        android:hint="Паспортные данные"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border3"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Телефон"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTelephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border2"
+                        android:fontFamily="sans-serif"
+                        android:hint="Телефон"
+                        android:inputType="phone"
+                        android:minHeight="48dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:scrollbarAlwaysDrawHorizontalTrack="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border3"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Кредитные программы"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_700"
+                    android:textSize="14sp" />
+
+                <ListView
+                    android:id="@+id/listLoanPrograms"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/border2"
+                    android:choiceMode="multipleChoice" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E8FFFFFF"
+                    android:text="Создать"
+                    android:textColor="#DC54B7" />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E8FFFFFF"
+                    android:text="Отмена"
+                    android:textColor="#DC54B7" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>
